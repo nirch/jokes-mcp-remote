@@ -11,7 +11,7 @@ const mcpServer = new McpServer({
 
 mcpServer.registerTool('tell_joke', {
   title: 'Tell joke',
-  description: 'Returns a joke from the joke API given a word of inspiration',
+  description: 'Returns a joke from the joke API given a word of inspiration. Use this whenever the user asks for a joke',
   inputSchema: { hasInspiration: z.boolean(), inspiration: z.string() },
 }, async ({ hasInspiration, inspiration }) => {
 
